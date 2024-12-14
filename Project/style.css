@@ -139,7 +139,7 @@ ul li h3 {
 
 ul li p {
     font-size: 16px;
-    color: #555;
+    color: #333
 }
 
 #contact-form {
@@ -160,7 +160,7 @@ ul li p {
 #contact-form button {
     width: 100%;
     padding: 12px;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.1);
     color: white;
     border: none;
     border-radius: 5px;
@@ -168,18 +168,19 @@ ul li p {
 }
 
 #contact-form button:hover {
-    background-color: #555;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .form-message {
     margin-top: 20px;
     font-size: 18px;
-    color: green;
+    color: rgb(252, 227, 6);
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.1);
     color: white;
     padding: 20px;
     text-align: center;
