@@ -1,19 +1,33 @@
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();  
-    
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+const searchicon1 = document.querySelector('#searchicon1');
+const srchicon1 = document.querySelector('#srchicon1');
+const search1 = document.querySelector('searchinput1');
 
-    if (name === "" || email === "" || message === "") {
-        alert("Please fill in all fields.");
-        return;
-    }
+searchicon1.addEventListener('click' , function(){
+    search1.style.display = 'flex ';
+    searchicon1.style.display = 'none'
+})
 
-    const formMessage = document.getElementById("form-message");
-    formMessage.textContent = `Thank you for reaching out, ${name}! We will get back to you soon.`;
-    formMessage.style.color = "green";
+const searchicon2 = document.querySelector('#searchicon2');
+const srchicon2 = document.querySelector('#srchicon2');
+const search2 = document.querySelector('searchinput2');
 
+searchicon2.addEventListener('click' , function(){
+    search2.style.display = 'flex ';
+    searchicon2.style.display = 'none'
+})
 
-    document.getElementById("contact-form").reset();
-});
+const bar = document.querySelector('.fa-bars');
+const cross = document.querySelector('#hdcross');
+const headerbar = document.querySelector('.headerbar');
+
+bar.addEventListener('click', function(){
+    setTimeout(()=>{
+        cross.style.display = 'block';
+    },200);
+    headerbar.style.right = '0%';
+})
+
+cross.addEventListener('click', function(){
+    cross.style.display = 'none';
+    headerbar.style.right = '-100%'
+})

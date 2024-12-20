@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha384-KyZXEJ6Jt0L7f0M6Q7fF6hGZp0K5fI0z1s5mAiov6hrv6wFFG8K9Lg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="shortcut icon" href="logo.webp" type="image/x-icon" >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant XYZ</title>
+    <title>Restaurant Golden Plate</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="header">
+
             <div class="headerbar">
                 <div class="account">
                     <ul>
                         <a href="">
-                            <li>
-                                <i class="fa-solid fa-house-chimney"></i>
-                            </li>
+                            <li class="fa-solid fa-house-chimney"></li>
                         </a>
-                        <a href="">
-                            <li>
-                                <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i>
-                            </li>
+                        <a href="#">
+                            <li class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></li>
                         </a>
                         <div class="search" id="searchinput1">
-                            <input type="search"> 
-                            <i class="fa-solid fa-magnifying-glass searchicon"></i>
+                            <input type="search">
+                            <i class="fa-solid fa-magnifying-glass search"></i>
                         </div>
                         <a href="">
                             <li>
@@ -43,7 +43,7 @@
                             <li>About</li>
                         </a>
                         <a href="">
-                            <li>Food Menu</li>
+                            <li>Food Table</li>
                         </a>
                         <a href="">
                             <li>Book Table</li>
@@ -54,7 +54,11 @@
             <div class="logo">
                 <img src="logo.webp" alt="">
             </div>
-            <h1>Restaurant XYZ</h1>
+            <div class="name">Restaurant Golden Plate</div>
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="hdcross"></i>
+            </div>
             <div class="nav">
                 <ul>
                     <a href="#">
@@ -64,77 +68,151 @@
                         <li>About</li>
                     </a>
                     <a href="#">
-                        <li>Book Table</li>
+                        <li>Food Menu</li>
                     </a>
                     <a href="#">
-                        <li>Food Menu</li>
+                        <li>Book Table</li>
                     </a>
                 </ul>
             </div>
             <div class="account">
                 <ul>
-                    <a href="#">
+                    <a href="">
                         <li>
-                            <i class="fa-solid fa-housechimney"></i>
+                            <i class="fa-solid fa-house-chimney"></i>
                         </li>
+                    </a>
+                    <a href="">
                         <li>
-                            <i class="fa-solid fa-magnify-glass" id="searchicon2"></i>
+                            <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i>
                         </li>
                     </a>
                     <div class="search" id="searchinput2">
                         <input type="search">
-                        <i class="fa-solid fa-magnify-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass searchicon"></i>
                     </div>
                     <a href="#">
-                        <i class="fa-solid fa-user" id="user-lap"></i>
+                        <li>
+                            <i class="fa-solid fa-user" id="user-lap"></i>
+                        </li>
                     </a>
                 </ul>
             </div>
+
         </div>
     </header>
 
-    <section id="about" class="section">
-        <h2>Welcome to Restaurant XYZ</h2>
-        <p>At Restaurant XYZ, we serve the finest gourmet dishes, prepared with the freshest ingredients and the utmost care. Join us for an unforgettable dining experience.</p>
-        <img src="https://media.istockphoto.com/id/1057838514/photo/3d-coffee-pub-loft-style-interior-render.jpg?s=612x612&w=0&k=20&c=SStbGb43E_x-QZQpd1aImJqcu6DFgppsNxvrc4h6N-A=" alt="Restaurant Interior">
-    </section>
+    <div class="home">
+        <div class="main_slide">
+            <div>
+                <h1>Enjoy <span>Delicious Food</span> In Your Healthy Life.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, repudiandae molestias exercitationem fuga quisquam tenetur est possimus atque quo explicabo aut vero repellendus molestiae ex quibusdam ut nobis voluptas nam?</p>
+                <button class="red_btn">Visit Now <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <div>
+                <img src="plateee.jpeg" alt="Delicious food plate">
+            </div>
+        </div>
+    
+        <div class="food-items">
+            <div class="items">
+                <div>
+                    <img src="beef.jpg" alt="Beef dish" width="160px">
+                </div>
+                <h3>Beef</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, est.</p>
+                <button class="white_btn">See Menu</button>
+            </div>
 
-    <section id="menu" class="section">
-        <h2>Our Menu</h2>
-        <ul>
-            <li>
-                <h3>Spaghetti Carbonara</h3>
-                <p>A classic Italian pasta dish with eggs, cheese, pancetta, and pepper.</p>
-            </li>
-            <li>
-                <h3>Margherita Pizza</h3>
-                <p>A traditional pizza with fresh tomatoes, mozzarella cheese, and basil.</p>
-            </li>
-            <li>
-                <h3>Grilled Salmon</h3>
-                <p>Perfectly grilled salmon served with a side of seasonal vegetables.</p>
-            </li>
-            <li>
-                <h3>Chocolate Lava Cake</h3>
-                <p>A decadent chocolate cake with a molten center, served with vanilla ice cream.</p>
-            </li>
-        </ul>
-    </section>
+            <div class="items">
+                <div>
+                    <img src="vegg.avif" alt="Vegetable dish" width="160px">
+                </div>
+                <h3>Vegetables & Filetto</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, est.</p>
+                <button class="white_btn">See Menu</button>
+            </div>
 
-    <section id="contact" class="section">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <div id="form-message" class="form-message"></div>
-    </section>
+            <div class="items">
+                <div>
+                    <img src="fff.jpg" alt="Vegetable dish" width="160px">
+                </div>
+                <h3>Chicken Fillet</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, est.</p>
+                <button class="white_btn">See Menu</button>
+            </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2024 Restaurant XYZ - All rights reserved</p>
-    </footer>
+        <div class="main_slide2">
+            <div class="foodimg">
+                <img src="imgg.jpg" alt="">
+            </div>
+            <div class="question">
+                <div>
+                    <h2>Why People Choose Us?</h2>
+                </div>
+                <div>
+                    <div class="q-ans">
+                        <div>
+                            <img src="vegg.avif" alt="" >
+                        </div>
+                        <div>
+                            <h4>Chose your favorite</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta veniam facilis consectetur?</p>
+                        </div>
+                    </div>
+                    <div class="q-ans">
+                        <div>
+                            <img src="guri.jpg" alt="" >
+                        </div>
+                        <div>
+                            <h4>Chose your favorite</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta veniam facilis consectetur?</p>
+                        </div>
+                    </div>
+                    <div class="q-ans">
+                        <div>
+                            <img src="kuk.jpg" alt="">
+                        </div>
+                        <div>
+                            <h4>Chose your favorite</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta veniam facilis consectetur?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="letter">
+                <div class="letterhead">
+                    <h2>Subscribe <span>NewsLetter</span></h2>
+                </div>
+                <div class="letterinput">
+                    <div>
+                        <input type="email" placeholder="Example.com">
+                    </div>
+                    <button class="red_btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer1">
+            <div class="logo">
+                <img src="logo.webp" alt="">
+            </div>
+            <div>
+                <address>
+                    <p>Email:     goldenplate@gmail.com</p>
+                    <p>YouTube:   Restaurant Golden Plate</p>
+                    <p>Location:  Prishtine </p>
+                </address>
+            </div>
+        </div>
+        <div class="footer2">
+            <img src="gp.jpeg" alt="">
+        </div>
+    </div>
+    
 
     <script src="main.js"></script>
 </body>
