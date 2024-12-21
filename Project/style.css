@@ -197,6 +197,8 @@
     background-color: rgb(30, 30, 30);
     padding: 0 7vw;
     color: rgb(255, 204, 0);
+    background-image: image-set("https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?cs=srgb&dl=pexels-pixabay-260922.jpg&fm=jpg");
+    background-attachment: fixed;
 }
 
 .main_slide{
@@ -228,6 +230,10 @@
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-color: rgb(253, 176, 34);
+}
+
+.main_slide img{
+    border-radius: 5%;
 }
 
 .red_btn{
