@@ -32,7 +32,7 @@
     border-bottom: 2px solid rgb(255, 221, 51);
     background-color:rgb(20, 20, 20);
     color: rgb(255, 204, 0);
-    box-shadow: 0 2px 20px rgb(253, 77, 8)
+    box-shadow: 0 2px 20px rgb(253, 77, 8);
 }
 
 .header ul{
@@ -212,12 +212,14 @@
     display: flex;
     justify-content: center;
     padding-top: 40px;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .main_slide div:nth-child(1){
     padding-top: 20px;
     flex: 1;
     font-size: 30px;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .main_slide div:nth-child(1) p{
@@ -365,6 +367,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .foodimg{
@@ -513,3 +516,15 @@
     margin-bottom: 15px;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.items {
+    animation: fadeIn 2s ease-in-out;
+}

@@ -31,3 +31,8 @@ cross.addEventListener('click', function(){
     cross.style.display = 'none';
     headerbar.style.right = '-100%'
 })
+
+document.getElementById("searchicon1").addEventListener("click", function() {
+    const searchInput = document.getElementById("searchinput1");
+    searchInput.classList.toggle("show");
+});
