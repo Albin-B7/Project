@@ -36,3 +36,11 @@ document.getElementById("searchicon1").addEventListener("click", function() {
     const searchInput = document.getElementById("searchinput1");
     searchInput.classList.toggle("show");
 });
+
+document.querySelector('.bar').addEventListener('click', () => {
+    document.querySelector('.headerbar').classList.add('active');
+});
+
+document.querySelector('.headerbar .close').addEventListener('click', () => {
+    document.querySelector('.headerbar').classList.remove('active');
+});

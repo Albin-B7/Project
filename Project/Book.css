@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -8,98 +7,101 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
-.logo img{
+.logo img {
     width: 80px;
     border-radius: 100%;
 }
 
-.headerbar{
+.headerbar {
     display: none;
 }
 
-.searchicon{
+.searchicon {
     display: block;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
     align-items: center;
     height: 100px;
     padding: 0 7vw;
     border-bottom: 2px solid rgb(255, 221, 51);
-    background-color:rgb(20, 20, 20);
+    background-color: rgb(20, 20, 20);
     color: rgb(255, 204, 0);
     box-shadow: 0 2px 20px rgb(253, 77, 8);
 }
 
-.header ul{
+.header ul {
     display: flex;
     align-items: center;
+    flex-wrap: wrap; /* Added wrap for responsiveness */
 }
 
-.header ul li:hover{
+.header ul li:hover {
     color: rgb(253, 57, 8);
 }
 
-.nav ul li{
+.nav ul li {
     padding: 0 15px;
     font-size: 14px;
     font-weight: bold;
 }
 
-.account{
+.account {
     flex: 0.1;
 }
 
-.account ul{
+.account ul {
     display: flex;
     justify-content: end;
 }
 
-.account ul li{
-    padding: 0 15px ;
+.account ul li {
+    padding: 0 15px;
     font-size: 18px;
 }
 
-.bar i:hover{
-    color:  rgb(253, 57, 8);
+.bar i:hover {
+    color: rgb(253, 57, 8);
 }
 
-.search{
+.search {
     display: flex;
     width: 200px;
     justify-content: center;
 }
 
-.search input{
+.search input {
     width: 100%;
     outline: none;
     border: none;
     padding: 5px;
 }
 
-.searchicon{
+.searchicon {
     background-color: wheat;
     display: block;
-    padding: 4px 5px ;
+    padding: 4px 5px;
     cursor: pointer;
 }
 
-@media only screen and (max-width: 768px){
-    .header .nav, .header .account{
+@media only screen and (max-width: 400px) {
+    .header .nav, .header .account {
         display: none;
     }
-    .search{
+
+    .search {
         width: 60vw;
+        max-width: 300px; /* Ensures the search input doesn't become too wide */
     }
-    .bar{
+
+    .bar {
         display: block;
         cursor: pointer;
     }
-    .headerbar{
+
+    .headerbar {
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -111,86 +113,89 @@
         background-color: rgb(15, 15, 15);
         transition: all 0.5s;
     }
-    .headerbar .account .headerbar .nav{
+
+    .headerbar .account .headerbar .nav {
         display: block;
         font-size: 18px;
     }
-    .bar .fa-xmark{
+
+    .bar .fa-xmark {
         display: block;
         top: 20px;
-        right: 5w;
+        right: 5vw;
         position: absolute;
         font-size: 25px;
     }
-    .headerbar .nav ul{
+
+    .headerbar .nav ul {
         flex-direction: column;
         margin-top: 10px;
         text-align: center;
     }
-    .headerbar .nav li{
+
+    .headerbar .nav li {
         width: 65vw;
         margin: 10px 0;
         padding: 15px 30px;
         box-shadow: 0 2px 15px rgb(252, 193, 169);
-        font-size: 15px ;
+        font-size: 15px;
         margin-top: 5px;
     }
-    .headerbar .account{
+
+    .headerbar .account {
         line-height: 40px;
         margin-top: 60px;
         background-color: rgb(255, 210, 210);
         padding: 15px;
     }
-    .headerbar .account ul{
+
+    .headerbar .account ul {
         justify-content: space-around;
     }
 
-    .foodimg{
+    .foodimg {
         flex: 1;
         text-align: center;
         margin-bottom: 20px;
     }
 
-    .foodimg img{
+    .foodimg img {
         width: 70vw;
     }
 
-    .question{
+    .question {
         flex: 1;
         margin-top: 30px;
     }
 
-    .question h2{
+    .question h2 {
         font-size: 25px;
     }
 
-    .q-ans div:nth-child(2) p{
+    .q-ans div:nth-child(2) p {
         font-size: 11px;
     }
 
-    .letterhead h2{
+    .letterhead h2 {
         font-size: 20px;
     }
-    
-    .letterinput input{
+
+    .letterinput input {
         font-size: 12px;
         padding: 15px;
         width: 50vw;
     }
 
-    .letterinput .red_btn{
+    .letterinput .red_btn {
         line-height: 40px;
         width: 120px;
         font-size: 12px;
     }
 
-    .letter{
+    .letter {
         justify-content: center;
         text-align: center;
-
     }
-
-
 }
 
 .home {
@@ -201,13 +206,13 @@
     background-attachment: fixed;
 }
 
-.main_slide{
+.main_slide {
     display: flex;
     align-items: center;
     flex-wrap: wrap-reverse;
 }
 
-.main_slide div:nth-child(2){ 
+.main_slide div:nth-child(2) {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -215,30 +220,30 @@
     animation: fadeIn 0.5s ease-in-out;
 }
 
-.main_slide div:nth-child(1){
+.main_slide div:nth-child(1) {
     padding-top: 20px;
     flex: 1;
     font-size: 30px;
     animation: fadeIn 0.5s ease-in-out;
 }
 
-.main_slide div:nth-child(1) p{
+.main_slide div:nth-child(1) p {
     font-size: 13px;
     padding: 20px 0;
 }
 
-.main_slide div:nth-child(1) span{
+.main_slide div:nth-child(1) span {
     color: rgb(253, 57, 8);
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-color: rgb(253, 176, 34);
 }
 
-.main_slide img{
+.main_slide img {
     border-radius: 5%;
 }
 
-.red_btn{
+.red_btn {
     cursor: pointer;
     margin-top: 20px;
     width: 160px;
@@ -248,33 +253,33 @@
     background-color: rgb(253, 77, 8);
     border-radius: 5px;
     border: 1px solid rgb(20, 20, 20);
-    box-shadow: 0 10px 15px (250, 120, 69);
+    box-shadow: 0 10px 15px rgb(250, 120, 69);
     transition: all 0.2s;
 }
 
-.red_btn i{
+.red_btn i {
     color: white;
 }
 
-.red_btn:hover{
+.red_btn:hover {
     background-color: white;
     box-shadow: 0 2px 15px rgb(250, 120, 69);
     border: 1px solid rgb(253, 77, 8);
-    color:rgb(253, 77, 8); 
+    color: rgb(253, 77, 8);
 }
 
-@media only screen and (max-width: 550px){
-    .main_slide div:nth-child(1){
+@media only screen and (max-width: 400px) {
+    .main_slide div:nth-child(1) {
         font-size: 18px;
-}
+    }
 
-    .main_slide div:nth-child(1) p{
+    .main_slide div:nth-child(1) p {
         padding-top: 5px;
         margin: 10px 0;
         font-size: 11px;
     }
 
-    .red_btn{
+    .red_btn {
         margin-top: 10px;
         width: 120px;
         line-height: 30px;
@@ -282,27 +287,24 @@
         padding: 0 12px;
     }
 
-    .main_slide div:nth-child(1) span{
+    .main_slide div:nth-child(1) span {
         text-underline-offset: 5px;
     }
 
-
-    .main_slide div:nth-child(1) img{
+    .main_slide div:nth-child(1) img {
         width: 70vw;
     }
 
-    .footer .footer1 div{
+    .footer .footer1 div {
         margin: 0;
     }
 
-    .footer div{
+    .footer div {
         margin-bottom: 40px;
-
     }
 }
 
-
-.food-items{
+.food-items {
     margin: 70px 0;
     padding: 20px 0;
     background-color: white;
@@ -312,30 +314,28 @@
     flex-wrap: wrap;
 }
 
-.items{
+.items {
     width: 250px;
     padding: 30px;
     text-align: center;
 }
 
-.items div{
-    height:  160px;
+.items div {
+    height: 160px;
 }
 
-.items img{
-    width: 160;
+.items img {
+    width: 160px;
     margin-top: 15px;
 }
 
-
-
-.items p{
+.items p {
     font-size: 12px;
     margin-top: 15px;
     margin-bottom: 10px;
 }
 
-.white_btn{
+.white_btn {
     cursor: pointer;
     margin-top: 20px;
     width: 160px;
@@ -349,19 +349,18 @@
     transition: all 0.2s;
 }
 
-.white_btn:hover{
+.white_btn:hover {
     color: aliceblue;
     background-color: rgb(253, 77, 8);
-    box-shadow: 0 10px 15px rgb(250, 120 ,69 );
+    box-shadow: 0 10px 15px rgb(250, 120, 69);
 }
 
-.item .red_btn, .items .white_btn{
+.item .red_btn, .items .white_btn {
     width: 120px;
     line-height: 35px;
-
 }
 
-.main_slide2{
+.main_slide2 {
     margin: 80px 0;
     display: flex;
     flex-wrap: wrap;
@@ -370,28 +369,27 @@
     animation: fadeIn 1s ease-in-out;
 }
 
-.foodimg{
+.foodimg {
     flex: 0.5;
-
 }
 
-.foodimg img{
+.foodimg img {
     max-width: 500px;
     width: 45vw;
 }
 
-.question{
+.question {
     flex: 0.5;
     flex-direction: column;
     margin-left: 40px;
 }
 
-.question h2{
+.question h2 {
     font-size: 35px;
     margin-bottom: 15px;
 }
 
-.q-ans{
+.q-ans {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -399,12 +397,11 @@
     cursor: pointer;
 }
 
-.q-ans img{
+.q-ans img {
     width: 45px;
-
 }
 
-.q-ans div:first-child{
+.q-ans div:first-child {
     padding: 10px;
     border-radius: 50%;
     height: 65px;
@@ -413,18 +410,17 @@
     margin-right: 20px;
 }
 
-.q-ans div:nth-child(2){
+.q-ans div:nth-child(2) {
     display: flex;
     flex-direction: column;
 }
 
-.q-ans div:nth-child(1) p{
+.q-ans div:nth-child(1) p {
     margin-top: 10px;
     font-size: 13px;
-
 }
 
-.letter{
+.letter {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -432,54 +428,53 @@
     padding: 100px 0;
 }
 
-.letterhead{
+.letterhead {
     flex: 0.5;
 }
 
-.letterhead h2{
+.letterhead h2 {
     font-size: 30px;
 }
 
-.letterhead span{
+.letterhead span {
     color: red;
 }
 
-.letterinput{
+.letterinput {
     width: 100%;
     margin-top: 20px;
     display: flex;
     flex: 0.5;
 }
 
-.letterinput div{width: 70%;
+.letterinput div {
+    width: 70%;
     display: flex;
     align-items: center;
     background-color: rgb(255, 219, 185);
 }
 
-.letterinput input{
+.letterinput input {
     font-size: 15px;
     padding: 10px;
     outline: none;
     width: 100%;
     border: none;
     background-color: rgb(255, 219, 185);
-
 }
 
-.letterinput .red_btn{
+.letterinput .red_btn {
     margin: 0;
     font-size: 18px;
     box-shadow: none;
     border-radius: 0 10px 10px 0;
-
 }
 
-.name{
+.name {
     font-size: 30px;
 }
 
-.footer{
+.footer {
     padding: 60px 0;
     border-top: 2px solid rgb(255, 204, 0);
     background-color: rgb(20, 20, 20);
@@ -491,28 +486,27 @@
     margin-top: -80px;
 }
 
-.footer1{
+.footer1 {
     cursor: pointer;
     font-size: 14px;
     padding: 2px;
     color: rgb(255, 204, 0);
 }
 
-.footer1 .logo img{
+.footer1 .logo img {
     width: 200px;
 }
 
-.footer2{
+.footer2 {
     text-align: center;
     cursor: pointer;
 }
 
-.footer2 h2{
+.footer2 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.footer2 img{
-    
+.footer2 img {
     margin-bottom: 15px;
 }
 
