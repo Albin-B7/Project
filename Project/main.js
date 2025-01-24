@@ -11,36 +11,19 @@ const searchicon2 = document.querySelector('#searchicon2');
 const srchicon2 = document.querySelector('#srchicon2');
 const search2 = document.querySelector('searchinput2');
 
-searchicon2.addEventListener('click' , function(){
-    search2.style.display = 'flex ';
-    searchicon2.style.display = 'none'
-})
+
 
 const bar = document.querySelector('.fa-bars');
 const cross = document.querySelector('#hdcross');
 const headerbar = document.querySelector('.headerbar');
 
-bar.addEventListener('click', function(){
-    setTimeout(()=>{
-        cross.style.display = 'block';
-    },200);
-    headerbar.style.right = '0%';
-})
 
-cross.addEventListener('click', function(){
-    cross.style.display = 'none';
-    headerbar.style.right = '-100%'
-})
+
+
 
 document.getElementById("searchicon1").addEventListener("click", function() {
     const searchInput = document.getElementById("searchinput1");
     searchInput.classList.toggle("show");
 });
 
-document.querySelector('.bar').addEventListener('click', () => {
-    document.querySelector('.headerbar').classList.add('active');
-});
 
-document.querySelector('.headerbar .close').addEventListener('click', () => {
-    document.querySelector('.headerbar').classList.remove('active');
-});
